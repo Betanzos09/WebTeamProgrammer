@@ -1,0 +1,75 @@
+:root {
+    --color-berenjena: rgb(133, 66, 160);
+    --color-verde-agua: rgb(89, 192, 161);
+    --color-celeste: rgb(207, 234, 241);
+    --color-mostaza: rgb(241, 232, 145);
+    --color-fucsia: rgb(228, 56, 162);
+    --color-dark-blue: rgb(54, 57, 212);
+  }
+  
+
+
+/***************BODY******************/
+
+body{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+/***************HEADER******************/
+
+header{
+    width: 100%;
+    height: 400px; /*BORRAR*/
+    background: var(--color-berenjena);
+}
+
+/***************SERVICIO******************/
+
+#servicio{
+    width: 100%;
+    height: 500px; /*BORRAR*/
+    background: var(--color-verde-agua);
+}
+
+/***************EQUIPO******************/
+
+#equipo{
+    width: 100%;
+    height: 600px; /*BORRAR*/
+    background: var(--color-celeste);
+}
+
+/***************HABILIDADES******************/
+
+
+#habilidades{
+    width: 100%;
+    height: 250px; /*BORRAR*/
+    background: white;
+}
+
+/***************PORTFOLIO******************/
+
+#portfolio{
+    width: 100%;
+    height: 700px; /*BORRAR*/
+    background: var(--color-mostaza);
+}
+
+/***************SOBRENOSOTROS******************/
+
+#sobreNosotros{
+    width: 100%;
+    height: 500px; /*BORRAR*/
+    background: var(--color-fucsia);
+}
+
+/***************CONTACTO******************/
+
+#contacto{
+    width: 100%;
+    height: 600px; /*BORRAR*/
+    background: var(--color-dark-blue);
+}
