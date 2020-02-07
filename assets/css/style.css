@@ -1,19 +1,18 @@
 :root {
     --color-berenjena: rgb(133, 66, 160);
-    --color-verde-agua: rgb(89, 192, 161);
+    --color-verde-agua: rgb(58, 180, 143);
     --color-celeste: rgb(207, 234, 241);
     --color-mostaza: rgb(241, 232, 145);
     --color-fucsia: rgb(228, 56, 162);
     --color-dark-blue: rgb(54, 57, 212);
     --color-mandarina: rgb(226, 132, 43);
-
-  }
-  
+    --color-dark-dark-blue: rgb(40, 40, 95);
+}
 
 
 /***************BODY******************/
 
-body{
+body {
     margin: 0px;
     padding: 0px;
     width: 100%;
@@ -21,49 +20,59 @@ body{
     color: white;
 }
 
-#nombreWeb{
+#nombreWeb {
     margin: 0px;
     font-family: 'Dancing Script', cursive;
 }
 
-h2, h3{
+h2,
+h3,
+h4 {
     margin: 0px;
     font-family: 'Varela Round', sans-serif;
 }
 
-p{
+h3 {
+    font-size: 20px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+p {
     margin: 0px;
     font-size: 16px;
-
 }
+
 
 /***************HEADER******************/
 
-header{
+header {
     width: 100%;
     background: var(--color-berenjena);
     height: 500px;
 }
 
-#contenidoHeader{
+.contenido {
     position: relative;
     top: 50px;
     bottom: 50px;
     margin: 0px;
 }
 
-#nombreWeb{
+#nombreWeb {
     margin: 0px 10%;
     margin-bottom: 100px;
 }
 
-#zonaMensajeTitulo{
+.zonaMensajeTitulo {
     margin: 0px 12%;
     text-align: center;
     margin-bottom: 100px;
 }
 
-.botonNaranja{
+.botonNaranja {
     background: var(--color-mandarina);
     text-align: center;
     width: 200px;
@@ -73,68 +82,240 @@ header{
     margin-bottom: 100px;
 }
 
-.botonNaranja p{
+.botonNaranja p {
     line-height: 50px;
 }
 
+
 /***************SERVICIO******************/
 
-#servicio{
+#servicio {
     width: 100%;
-    height: 500px; 
+    height: 500px;
     background: var(--color-verde-agua);
 }
 
+.divisor {
+    width: 180px;
+    height: 5px;
+    background: rgba(80, 78, 78, 0.329);
+    margin: 0 auto;
+}
+
+.zonaMensaje {
+    margin: 0px 12%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.zonaMensajeDescripcion {
+    margin: 30px 35%;
+    text-align: center;
+}
+
+.listaServicios,
+.listaTeam {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 0;
+    height: 250px;
+}
+
+.ejemploServicio,
+.ejemploTeam {
+    width: 20%;
+    height: inherit;
+    margin: 0 2.5%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.ejemploServicio>*,
+.ejemploTeam>* {
+    text-align: center;
+}
+
+.ejemploServicio h3 {
+    color: white;
+    margin: 10px auto;
+}
+
+.icono:before {
+    font-family: "IcoFont";
+    font-size: 100px;
+}
+
+.bandera:before {
+    content: "\ef2f";
+    color: rgb(243, 104, 104);
+}
+
+.lapiz:before {
+    content: "\eae8";
+    color: rgb(231, 180, 85);
+}
+
+.engranaje:before {
+    content: "\ef3b";
+    color: rgb(70, 70, 199);
+}
+
+.cohete:before {
+    content: "\ee2d";
+    color: gainsboro;
+}
+
+
 /***************EQUIPO******************/
 
-#equipo{
+#equipo {
     width: 100%;
-    height: 600px; 
+    height: 700px;
     background: var(--color-celeste);
 }
 
+#equipo h2,
+#equipo h3,
+#equipo p {
+    color: var(--color-dark-dark-blue);
+}
+
+#equipo h4 {
+    color: dodgerblue;
+    margin: 5px auto;
+}
+
+#equipo figure {
+    width: 200px;
+    height: 200px;
+    background: dimgrey;
+    margin: 40px auto;
+    border-radius: 200px;
+}
+
+#equipo p {
+    margin: 10px auto;
+}
+
+.redes {
+    width: 100%;
+}
+
+.iconoRedes {
+    background: rgb(138, 176, 200);
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    display: inline-block;
+    vertical-align: top;
+    margin: auto 2px;
+}
+
+.iconoRedes:before {
+    font-family: "IcoFont";
+    font-size: 15px;
+    line-height: 30px;
+    color: white;
+}
+
+.facebook:before {
+    content: "\ed37";
+}
+
+.twitter:before {
+    content: "\ed7a";
+}
+
+.linkedin:before {
+    content: "\ed4d";
+}
+
+.mail:before {
+    content: "\ef12";
+}
+
+
 /***************HABILIDADES******************/
 
-
-#habilidades{
+#habilidades {
     width: 100%;
-    height: 250px; 
+    height: 250px;
     background: white;
 }
 
+
 /***************PORTFOLIO******************/
 
-#portfolio{
+#portfolio {
     width: 100%;
-    height: 700px; 
+    height: 700px;
     background: var(--color-mostaza);
 }
 
+
 /***************SOBRENOSOTROS******************/
 
-#sobreNosotros{
+#sobreNosotros {
     width: 100%;
-    height: 500px; 
+    height: 500px;
     background: var(--color-fucsia);
 }
 
+
 /***************CONTACTO******************/
 
-#contacto{
+#contacto {
     width: 100%;
-    height: 600px; 
+    height: 600px;
     background: var(--color-dark-blue);
 }
 
 
 /*Medias*/
 
-@media(max-width: 500px){
-    /***************HEADER******************/
+@media(max-width: 1000px) {
+    /***************SERVICIO******************/
+    #servicio {
+        height: 900px;
+    }
+    .ejemploServicio,
+    .ejemploTeam {
+        width: 40%;
+        margin: 20px 5%;
+    }
+    /***************TEAM******************/
+    #equipo {
+        height: 1200px;
+    }
+    .ejemploTeam {
+        height: 400px;
+        /*margin: 0px auto 200px auto;*/
+    }
+}
 
-    header{
+@media(max-width: 500px) {
+    /***************HEADER******************/
+    header {
         width: 100%;
         background: var(--color-berenjena);
         height: 600px;
+    }
+    /***************SERVICIO******************/
+    #servicio {
+        height: 1500px;
+    }
+    .ejemploServicio,
+    .ejemploTeam {
+        width: 100%;
+        margin: 20px auto;
+    }
+    /***************TEAM******************/
+    #equipo {
+        height: 2100px;
+    }
+    .ejemploTeam {
+        height: 400px;
+        /*margin: 0px auto 200px auto;*/
     }
 }
