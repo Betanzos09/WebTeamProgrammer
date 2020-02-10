@@ -91,7 +91,7 @@ header {
 
 #servicio {
     width: 100%;
-    height: 500px;
+    height: 550px;
     background: var(--color-verde-agua);
 }
 
@@ -171,7 +171,7 @@ header {
 
 #equipo {
     width: 100%;
-    height: 700px;
+    height: 750px;
     background: var(--color-celeste);
 }
 
@@ -277,12 +277,12 @@ header {
 @media(max-width: 1000px) {
     /***************SERVICIO******************/
     #servicio {
-        height: 900px;
+        height: 1000px;
     }
     .ejemploServicio,
     .ejemploTeam {
         width: 40%;
-        margin: 20px 5%;
+        margin: 40px 5%;
     }
     /***************TEAM******************/
     #equipo {
