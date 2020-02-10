@@ -8,6 +8,7 @@
     --color-mandarina: rgb(226, 132, 43);
     --color-dark-dark-blue: rgb(40, 40, 95);
     --color-blue-ocean: rgb(69, 176, 238);
+    --color-negro-suave: rgb(35, 36, 37);
 }
 
 
@@ -73,8 +74,7 @@ header {
     margin-bottom: 100px;
 }
 
-.botonNaranja {
-    background: var(--color-mandarina);
+.boton {
     text-align: center;
     width: 200px;
     height: 50px;
@@ -84,7 +84,11 @@ header {
     cursor: pointer;
 }
 
-.botonNaranja p {
+.botonNaranja {
+    background: var(--color-mandarina);
+}
+
+.boton p {
     line-height: 50px;
 }
 
@@ -308,14 +312,73 @@ header {
 
 #portfolio {
     width: 100%;
-    height: 700px;
+    height: 1200px;
     background: var(--color-mostaza);
 }
 
 #portfolio h2,
 #portfolio h3,
-#portfolio p {
+#portfolio h4 {
     color: var(--color-dark-dark-blue);
+}
+
+#portfolio .zonaMensajeDescripcion p {
+    color: var(--color-dark-dark-blue);
+}
+
+.botonesPortfolio {
+    width: 100%;
+    text-align: center;
+}
+
+.botonPortfolio {
+    display: inline-block;
+    background: var(--color-negro-suave);
+    color: white;
+    width: 80px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.botonPortfolio:hover {
+    background: white;
+    color: var(--color-negro-suave);
+}
+
+.listaPortfolio {
+    width: 80%;
+    margin: 50px auto;
+    font-size: 0;
+}
+
+.ejemploPortfolio {
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+figure {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+}
+
+.macbook {
+    width: 95%;
+    margin: 0;
+    padding: 0;
+}
+
+.botonVerde {
+    background: var(--color-verde-agua);
 }
 
 
@@ -362,6 +425,10 @@ header {
     #habilidades {
         height: 1000px;
     }
+    /***************PORTFOLIO******************/
+    #portfolio {
+        height: 1100px;
+    }
 }
 
 @media(max-width: 500px) {
@@ -392,5 +459,12 @@ header {
     /***************HABILIDADES******************/
     #habilidades {
         height: 1500px;
+    }
+    /***************PORTFOLIO******************/
+    #portfolio {
+        height: 1650px;
+    }
+    .ejemploPortfolio {
+        width: 100%;
     }
 }
