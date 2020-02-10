@@ -2,11 +2,12 @@
     --color-berenjena: rgb(133, 66, 160);
     --color-verde-agua: rgb(58, 180, 143);
     --color-celeste: rgb(207, 234, 241);
-    --color-mostaza: rgb(241, 232, 145);
+    --color-mostaza: rgb(240, 213, 125);
     --color-fucsia: rgb(228, 56, 162);
     --color-dark-blue: rgb(54, 57, 212);
     --color-mandarina: rgb(226, 132, 43);
     --color-dark-dark-blue: rgb(40, 40, 95);
+    --color-blue-ocean: rgb(69, 176, 238);
 }
 
 
@@ -80,6 +81,7 @@ header {
     margin: 0 auto;
     border-radius: 5px;
     margin-bottom: 100px;
+    cursor: pointer;
 }
 
 .botonNaranja p {
@@ -114,7 +116,8 @@ header {
 }
 
 .listaServicios,
-.listaTeam {
+.listaTeam,
+.listaHabilidades {
     display: block;
     width: 80%;
     margin: 0 auto;
@@ -123,7 +126,8 @@ header {
 }
 
 .ejemploServicio,
-.ejemploTeam {
+.ejemploTeam,
+.ejemploHabilidades {
     width: 20%;
     height: inherit;
     margin: 0 2.5%;
@@ -132,7 +136,8 @@ header {
 }
 
 .ejemploServicio>*,
-.ejemploTeam>* {
+.ejemploTeam>*,
+.ejemploHabilidades>* {
     text-align: center;
 }
 
@@ -240,8 +245,62 @@ header {
 
 #habilidades {
     width: 100%;
-    height: 250px;
+    height: 600px;
     background: white;
+}
+
+#habilidades h2,
+#habilidades h3,
+#habilidades p,
+#habilidades span {
+    color: var(--color-dark-dark-blue);
+}
+
+.porcentaje {
+    width: 150px;
+    height: 150px;
+    background: rgb(198, 205, 223);
+    margin: 40px auto;
+    border-radius: 150px;
+    position: relative;
+}
+
+.porcentaje:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.porcentaje span {
+    font-size: 50px;
+    line-height: 130px;
+    background-color: white;
+    width: 130px;
+    height: 130px;
+    border-radius: 100px;
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+}
+
+.porcentaje.porcentaje-90:after {
+    background-image: linear-gradient(270deg, var(--color-blue-ocean) 50%, transparent 50%, transparent), linear-gradient(60deg, var(--color-blue-ocean) 50%, transparent 50%, transparent);
+}
+
+.porcentaje.porcentaje-75:after {
+    background-image: linear-gradient(270deg, var(--color-fucsia) 50%, transparent 50%, transparent), linear-gradient(0deg, var(--color-fucsia) 50%, transparent 50%, transparent);
+}
+
+.porcentaje.porcentaje-70:after {
+    background-image: linear-gradient(270deg, var(--color-verde-agua) 50%, transparent 50%, transparent), linear-gradient(-20deg, var(--color-verde-agua) 50%, transparent 50%, transparent);
+}
+
+.porcentaje.porcentaje-85:after {
+    background-image: linear-gradient(270deg, var(--color-mandarina) 50%, transparent 50%, transparent), linear-gradient(40deg, var(--color-mandarina) 50%, transparent 50%, transparent);
 }
 
 
@@ -251,6 +310,12 @@ header {
     width: 100%;
     height: 700px;
     background: var(--color-mostaza);
+}
+
+#portfolio h2,
+#portfolio h3,
+#portfolio p {
+    color: var(--color-dark-dark-blue);
 }
 
 
@@ -280,17 +345,22 @@ header {
         height: 1000px;
     }
     .ejemploServicio,
-    .ejemploTeam {
+    .ejemploTeam,
+    .ejemploHabilidades {
         width: 40%;
         margin: 40px 5%;
     }
     /***************TEAM******************/
     #equipo {
-        height: 1200px;
+        height: 1300px;
     }
     .ejemploTeam {
         height: 400px;
         /*margin: 0px auto 200px auto;*/
+    }
+    /***************HABILIDADES******************/
+    #habilidades {
+        height: 1000px;
     }
 }
 
@@ -306,7 +376,8 @@ header {
         height: 1500px;
     }
     .ejemploServicio,
-    .ejemploTeam {
+    .ejemploTeam,
+    .ejemploHabilidades {
         width: 100%;
         margin: 20px auto;
     }
@@ -317,5 +388,9 @@ header {
     .ejemploTeam {
         height: 400px;
         /*margin: 0px auto 200px auto;*/
+    }
+    /***************HABILIDADES******************/
+    #habilidades {
+        height: 1500px;
     }
 }
