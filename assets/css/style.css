@@ -650,6 +650,11 @@ footer p {
         margin: 0 2%;
     }
     /***************CONTACTO******************/
+    #contacto {
+        width: 100%;
+        height: 800px;
+        background: var(--color-dark-blue);
+    }
     .zonaInput {
         width: 90%;
         margin: 0 auto;
