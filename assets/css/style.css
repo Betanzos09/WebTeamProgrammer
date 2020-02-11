@@ -3,10 +3,10 @@
     --color-verde-agua: rgb(58, 180, 143);
     --color-celeste: rgb(207, 234, 241);
     --color-mostaza: rgb(240, 213, 125);
-    --color-fucsia: rgb(228, 56, 162);
-    --color-dark-blue: rgb(54, 57, 212);
+    --color-fucsia: rgb(189, 59, 139);
+    --color-dark-blue: rgb(60, 83, 161);
     --color-mandarina: rgb(226, 132, 43);
-    --color-dark-dark-blue: rgb(40, 40, 95);
+    --color-dark-dark-blue: rgb(45, 58, 102);
     --color-blue-ocean: rgb(69, 176, 238);
     --color-negro-suave: rgb(35, 36, 37);
 }
@@ -32,6 +32,10 @@ h3,
 h4 {
     margin: 0px;
     font-family: 'Varela Round', sans-serif;
+}
+
+h2 {
+    font-size: 23px;
 }
 
 h3 {
@@ -121,7 +125,8 @@ header {
 
 .listaServicios,
 .listaTeam,
-.listaHabilidades {
+.listaHabilidades,
+.listaOpiniones {
     display: block;
     width: 80%;
     margin: 0 auto;
@@ -131,7 +136,8 @@ header {
 
 .ejemploServicio,
 .ejemploTeam,
-.ejemploHabilidades {
+.ejemploHabilidades,
+.ejemploOpinion {
     width: 20%;
     height: inherit;
     margin: 0 2.5%;
@@ -141,7 +147,8 @@ header {
 
 .ejemploServicio>*,
 .ejemploTeam>*,
-.ejemploHabilidades>* {
+.ejemploHabilidades>*,
+.ejemploOpinion>* {
     text-align: center;
 }
 
@@ -386,8 +393,54 @@ figure {
 
 #sobreNosotros {
     width: 100%;
-    height: 500px;
+    height: 800px;
     background: var(--color-fucsia);
+}
+
+.listaOpiniones {
+    font-size: 0;
+}
+
+.ejemploOpinion {
+    width: 48%;
+    margin: 3% 1%;
+    height: 200px;
+    font-size: 0;
+}
+
+.figuraOpinion {
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.contenidoOpinion {
+    width: 62%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px 0;
+    text-align: left;
+}
+
+.contenidoOpinion p {
+    font-style: italic;
+}
+
+.contenidoOpinion h3 {
+    margin-top: 20px;
+}
+
+.contenidoOpinion small {
+    font-size: 15px;
+    color: var(--color-mostaza);
+}
+
+#sobreNosotros figure {
+    width: 100px;
+    height: 100px;
+    background: dimgrey;
+    margin: 0px auto;
+    border-radius: 100px;
 }
 
 
@@ -395,8 +448,69 @@ figure {
 
 #contacto {
     width: 100%;
-    height: 600px;
+    height: 700px;
     background: var(--color-dark-blue);
+}
+
+#contacto .zonaMensajeDescripcion {
+    margin: 30px 10%;
+}
+
+.zonaInput {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.datosContacto {
+    width: 100%;
+    font-size: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.datosContacto input {
+    font-size: 18px;
+    width: 47%;
+    height: 45px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    border-style: none;
+    background-color: var(--color-dark-dark-blue);
+    color: white;
+    text-indent: 20px;
+}
+
+.datosContacto input::placeholder {
+    color: white;
+    opacity: 1;
+}
+
+textarea {
+    font-size: 18px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    border-style: none;
+    text-decoration: none;
+    background-color: var(--color-dark-dark-blue);
+    color: white;
+    padding-top: 20px;
+    opacity: 1;
+    text-indent: 20px;
+}
+
+.datosContacto input::placeholder,
+textarea::placeholder {
+    color: white;
+    opacity: 1;
+}
+
+.botonOceano {
+    background: var(--color-blue-ocean);
 }
 
 
@@ -412,6 +526,9 @@ figure {
     .ejemploHabilidades {
         width: 40%;
         margin: 40px 5%;
+    }
+    .zonaMensajeDescripcion {
+        margin: 30px 10%;
     }
     /***************TEAM******************/
     #equipo {
@@ -433,6 +550,28 @@ figure {
         margin-left: auto;
         margin-right: auto;
         max-width: 300px;
+    }
+    /***************SOBRENOSOTROS******************/
+    #sobreNosotros {
+        height: 1000px;
+    }
+    .listaOpiniones {
+        width: 100%;
+    }
+    .ejemploOpinion {
+        width: 48%;
+        margin: auto 1%;
+        margin-bottom: 180px;
+    }
+    .ejemploOpinion>* {
+        width: 44%;
+        margin: 0;
+        margin-left: 10px;
+    }
+    /***************CONTACTO******************/
+    .zonaInput {
+        width: 80%;
+        margin: 0 auto;
     }
 }
 
@@ -476,5 +615,31 @@ figure {
         margin-left: auto;
         margin-right: auto;
         max-width: 250px;
+    }
+    /***************SOBRENOSOTROS******************/
+    #sobreNosotros {
+        height: 1600px;
+    }
+    .listaOpiniones {
+        width: 100%;
+    }
+    .ejemploOpinion {
+        width: 94%;
+        margin: 0 3%;
+        margin-bottom: 120px;
+    }
+    .ejemploOpinion>* {
+        margin: 0 2%;
+    }
+    /***************CONTACTO******************/
+    .zonaInput {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .datosContacto {
+        display: block;
+    }
+    .datosContacto input {
+        width: 100%;
     }
 }
