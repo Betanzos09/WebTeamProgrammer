@@ -514,6 +514,24 @@ textarea::placeholder {
 }
 
 
+/**************FOOTER***********************/
+
+footer {
+    width: 100%;
+    height: 60px;
+    bottom: 0px;
+    background-color: var(--color-dark-dark-blue);
+}
+
+footer p {
+    color: white;
+    text-align: center;
+    font-family: 'Source Serif Pro', serif;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+
 /*Medias*/
 
 @media(max-width: 1000px) {
