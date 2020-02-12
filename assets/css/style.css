@@ -593,7 +593,7 @@ footer p {
     }
 }
 
-@media(max-width: 500px) {
+@media(max-width: 600px) {
     /***************HEADER******************/
     header {
         width: 100%;
